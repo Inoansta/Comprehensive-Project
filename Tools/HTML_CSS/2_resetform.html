@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script type="text/javascript">
+    var reset_form = function(){
+        const email = document.getElementById('email');
+        email.value = "";
+        const pw = document.getElementById('password');
+        pw.value = "";
+    }
+</script>
+<!-- <link rel="stylesheet" type="text/css" href="index.css"> -->
+</head>
+<body>
+<h1>Login</h1>
+    <form name='loginForm' onsubmit="event.preventDefault()">
+        <div>
+        <input id='email' value="demo@mettl.com" />
+        <input id='password' type="password" value="password" />
+        <button id='btn' onclick="reset_form()">Reset</button>
+        <div> 
+    </form>
+</body>
+</html>
